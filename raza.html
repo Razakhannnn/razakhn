@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <!-- <img src="./9c66b7a9-4fc2-4350-aae7-abd64e040d55.jpg" alt="Logo"> -->
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="auth-buttons">
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn">Signup</button>
+        </div>
+    </header>
+
+    <!-- Login & Signup Forms -->
+    <div id="loginForm" class="dropdown-form hidden">
+        <h3>Login</h3>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="signupForm" class="dropdown-form hidden">
+        <h3>Signup</h3>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <!-- Home Page Content -->
+    <main>
+        <section class="hero-section">
+            <h1>Welcome to Our Business</h1>
+            <p>Your one-stop solution for all business needs</p>
+        </section>
+
+        <section class="hover-sections">
+            <div class="hover-item">Section 1</div>
+            <div class="hover-item">Section 2</div>
+            <div class="hover-item">Section 3</div>
+        </section>
+
+        <section class="scroll-sections">
+            <div class="section">Section 4</div>
+            <div class="section">Section 5</div>
+            <div class="section">Section 6</div>
+            <div class="section">Section 7</div>
+            <div class="section">Section 8</div>
+            <div class="section">Section 9</div>
+            <div class="section">Section 10</div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>About Our Business</h3>
+            <p>We offer innovative solutions for modern businesses.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+
+        
+document.getElementById("loginBtn").addEventListener("click", () => {
+    document.getElementById("loginForm").classList.toggle("hidden");
+    document.getElementById("signupForm").classList.add("hidden");
+});
+
+document.getElementById("signupBtn").addEventListener("click", () => {
+    document.getElementById("signupForm").classList.toggle("hidden");
+    document.getElementById("loginForm").classList.add("hidden");
+});
+
+    </script>
+</body>
+</html>
